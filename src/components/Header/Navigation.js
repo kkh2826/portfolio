@@ -1,18 +1,29 @@
-import { HStack, Text } from "@chakra-ui/react"
+import { HStack, Link, Text } from "@chakra-ui/react";
+import { useCallback } from "react";
 
 /**
- * 
+ *
  * Navigation Link 추가하기
  */
+
+const sections = ["About", "Skills", "Portfolio", "Contact"];
+
 function Navigation() {
-  return (
-    <HStack spacing={"3rem"}>
-        <Text fontSize={"lg"}>About</Text>
-        <Text fontSize={"lg"}>Skills</Text>
-        <Text fontSize={"lg"}>Portfolio</Text>
-        <Text fontSize={"lg"}>Contact</Text>
-    </HStack>
-  )
+  const linkNavi = useCallback(() => {
+    return sections.map((section) => (
+      <Link
+        key={section}
+        href={`#${section}`}
+        style={{
+          textDecorationColor: "gray",
+          textDecorationThickness: "3px",
+        }}
+      >
+        <Text fontSize={"lg"}>{section}</Text>
+      </Link>
+    ));
+  }, []);
+  return <HStack spacing={"3rem"}>{linkNavi()}</HStack>;
 }
 
-export default Navigation
+export default Navigation;
