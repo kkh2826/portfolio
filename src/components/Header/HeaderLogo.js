@@ -1,5 +1,4 @@
-import { Box, Text } from "@chakra-ui/react"
-
+import { Box, Heading } from "@chakra-ui/react";
 
 /**
  * Logo image made by Figma
@@ -7,9 +6,11 @@ import { Box, Text } from "@chakra-ui/react"
 function HeaderLogo() {
   return (
     <Box>
-        <Text fontSize={"2xl"}>Kim Kyoung Hoon</Text>
+      <Heading as={"h1"} fontSize={"2xl"}>
+        Kim Kyoung Hoon
+      </Heading>
     </Box>
-  )
+  );
 }
 
-export default HeaderLogo
+export default HeaderLogo;
