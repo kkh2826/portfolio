@@ -1,7 +1,7 @@
+import Voxel from "./Voxel";
+
 function About() {
-  return (
-    <div>About</div>
-  )
+  return <Voxel />;
 }
 
-export default About
+export default About;

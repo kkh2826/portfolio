@@ -7,7 +7,7 @@ function HeaderLogo() {
   return (
     <Box>
       <Heading as={"h1"} fontSize={"2xl"}>
-        Kim Kyoung Hoon
+        {process.env.REACT_APP_NAME}
       </Heading>
     </Box>
   );
