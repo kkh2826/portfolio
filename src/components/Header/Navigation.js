@@ -6,7 +6,7 @@ import { useCallback } from "react";
  * Navigation Link 추가하기
  */
 
-const sections = ["About", "Skills", "Portfolio", "Contact"];
+const sections = ["About", "Stacks", "Portfolio", "Contact"];
 
 function Navigation() {
   const linkNavi = useCallback(() => {
@@ -19,7 +19,7 @@ function Navigation() {
           textDecorationThickness: "3px",
         }}
       >
-        <Text fontSize={"lg"}>{section}</Text>
+        <Text fontSize={"xl"}>{section}</Text>
       </Link>
     ));
   }, []);

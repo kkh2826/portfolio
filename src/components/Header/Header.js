@@ -8,7 +8,9 @@ function Header() {
       maxW={"4xl"}
       position="fixed"
       left="50%"
-      transform="translate(-50%, -50%)"
+      top="0"
+      transform="translate(-50%, 0)"
+      h="3.5rem"
     >
       <Flex alignItems={"center"} justifyContent={"space-between"}>
         <HeaderLogo />
